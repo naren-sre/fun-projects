@@ -4,7 +4,7 @@
 Takes two arguments filename and string as word
 Usage:
 
-`python3 testing_parse.py /Users/narendram.admin/ownloads/iad51_HwEmul.log(full file path)  -w stream (word of your interest)`
+`python3 testing_parse.py /Users/narendram.admin/Downloads/iad51_HwEmul.log(full file path)  -w stream (word of your interest)`
 
 Sample output:
 I was searching for word stream
