@@ -9,9 +9,7 @@ Usage:
 Sample output:
 I was searching for word stream
 
-`(venv) naren-pc%  python3 testing_parse.py /Users/narendram.admin/Downloads/iad51_HwEmul.log  -w stream -i
-
-The word  stream is case sensitve: True ,occured  6570  times in file`
+`(venv) naren-pc%  python3 testing_parse.py /Users/narendram.admin/Downloads/iad51_HwEmul.log  -w stream -i .The word  stream is case sensitve: True ,occured  6570  times in file `
 
 In the following log I have two words with stream and STREAM
 so I provided an option for users with '-i' which checks for case insensitve word
