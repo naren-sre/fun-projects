@@ -3,11 +3,10 @@ check  if website is reachable
 '''
 import requests
 
-def website_recheable_check(url):
-    #print (url)
-    payload  = {}
+def website_recheable_check(url): #function to get response from any website we provide
+    
     try:
-            response = requests.request("GET", url, data = payload,timeout=1,allow_redirects=True)
+            response = requests.request("GET", url,timeout=1,allow_redirects=True)
 
             if response.status_code==200:
                return True
