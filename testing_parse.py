@@ -4,7 +4,7 @@ def parsebyword(file,type,word):
     try:
 
         count=0
-        with open(file, "r") as f:
+        with open(file, "r") as f:  ``` open file in read mode and read each line if type is set then change word and line to lowercase(casefold) and add read occurance by splitting till the word of interest```
             for line in f:
                 if type==True:
                     word = word.casefold()
