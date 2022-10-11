@@ -2,8 +2,8 @@
 check  if website is reachable
 '''
 import requests
-
-def website_recheable_check(url): #function to get response from any website we provide
+import logging
+def website_reachable_check(url): #function to get response from any website we provide
     
     try:
             response = requests.request("GET", url,timeout=1,allow_redirects=True)
@@ -18,16 +18,21 @@ def website_recheable_check(url): #function to get response from any website we 
 
 
 def main():
-    self_internet_check=website_recheable_check('https://www.google.com')
+    logging.basicConfig(filename="urlresults.txt",
+                    filemode='w',
+                    format='%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s',
+                    datefmt='%H:%M:%S',
+                    level=logging.DEBUG)
+    self_internet_check=website_reachable_check('https://www.google.com')
     if self_internet_check==True:
-        print("Self intenet is working")
-        website_check= website_recheable_check('https://api.instrumental.ai/healthcheck')
+        logging.info('your server local connections is good and resolver is functioning correctly')
+        website_check= website_reachable_check('https://api.instrumental.ai/healthcheck')
         if website_check == True:
-            print("Website is recheable")
+            logging.info('The Health check Website  is Rechable')
         else:
-            print("website not recheable")
+            logging.warning('Health check website not recheable,Please check the URL')
     else:
-        print("No Internet connection to your pc")
+        logging.warning("There is no internet connection available on your local machine")
 if __name__== '__main__':
     main()
 
