@@ -6,7 +6,7 @@ import logging
 def website_reachable_check(url): #function to get response from any website we provide
     
     try:
-            response = requests.request("GET", url,timeout=1,allow_redirects=True)
+            response = requests.request("GET", url,timeout=10,allow_redirects=True)
 
             if response.status_code==200:
                return True
