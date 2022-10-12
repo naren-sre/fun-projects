@@ -30,10 +30,11 @@ The word  stream is case sensitve: False ,occured  3285  times in file`
 Usage:
 `(venv) naren-pc %  python3 healthchecker.py   
 output:
-I wrote the output to a log file and I have plan to rotate the log once it gets filled. So customer has idea when connection was lost or when the connection was working. I used the logging module and writing the results and status codes into log file.
+I wrote the output to a log file. So customer has idea when connection was lost or when the connection was working. I used the logging module and writing the results and status codes into log file.
 
-This script checks self connectivity first and then tries to request get url for google just to verify if DNS is workign correctly and connectivty is working properly. If script fails at this step then customer is having connectivity issues
+This script checks default gateway first and ping to see if interface is up and running and then checks the DNS runs a connectivity test to standard url google and then tries to request get url for google just to verify if DNS is working correctly and connectivty is working properly to the url of interest. If script fails at this step 1 then customer is having issues with interface and/or default gateway
 
-The second part of script checks conenctivity to Instrumental healthcheck website to check connectivity to the site.
+if  second part of script fails that indicates you have no internet connection or your internal DNS is having issues resolving the standard website
+if script fails at 3rd part then you might want to double check url or please check with your router/isp
 
 
