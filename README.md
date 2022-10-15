@@ -1,6 +1,11 @@
 # fun-projects
 
-1. Testing Parse
+To download the code:
+
+`git clone https://github.com/naren-sre/fun-projects.git`
+
+1. Testing Parse:
+
 Takes two arguments filename and string as word
 Usage:
 
