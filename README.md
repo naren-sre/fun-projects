@@ -21,11 +21,12 @@ so I provided an option for users with '-i' which checks for case insensitve wor
 
 `Jun 10 13:29:24.072413 ERR [89310] HwTagTable::remove_rtp_stream() STREAM 163 NOT ACTIVE`
 
-so the out shall be as following when user uses i and when -i is not included
+so the output shall be as following when user uses -i and when -i is not included
 
 `(venv) naren-pc%  python3 testing_parse.py /Users/narendram.admin/Downloads/iad51_HwEmul.log  -w stream -i
-The word  stream is case sensitve: True ,occured  6570  times in file
-(venv) naren-pc %  python3 testing_parse.py /Users/narendram.admin/Downloads/iad51_HwEmul.log  -w stream   
+The word  stream is case sensitve: True ,occured  6570  times in file`
+
+`(venv) naren-pc %  python3 testing_parse.py /Users/narendram.admin/Downloads/iad51_HwEmul.log  -w stream   
 The word  stream is case sensitve: False ,occured  3285  times in file`
 
 
