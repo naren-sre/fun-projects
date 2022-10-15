@@ -11,7 +11,7 @@ Usage:
 
 `python3 testing_parse.py /Users/narendram.admin/Downloads/iad51_HwEmul.log(full file path)  -w stream (word of your interest)`
 
-Sample output:
+output:
 I was searching for word stream
 
 `(venv) naren-pc%  python3 testing_parse.py /Users/narendram.admin/Downloads/iad51_HwEmul.log  -w stream -i .The word  stream is case insensitve: True ,occured  6570  times in file `
@@ -34,7 +34,9 @@ The word  stream is case sensitve: False ,occured  3285  times in file`
 2. Health check(work in progress, I intend to add more features to this script)
 
 Usage:
-`(venv) naren-pc %  python3 healthchecker.py   
+
+`(venv) naren-pc %  python3 healthchecker.py ` 
+
 output:
 I wrote the output to a log file. So customer has idea when connection was lost or when the connection was working. I used the logging module and writing the results and status codes into log file.
 
